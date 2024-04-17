@@ -1,0 +1,13 @@
+.heading {
+    &--1 {
+        font-size: 48px;
+    }
+
+    &--2 {
+        font-size: 20px;
+    }
+
+    &--tinted {
+        color: hsl(233, 13%, 49%);
+    }
+}
