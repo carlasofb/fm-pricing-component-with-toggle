@@ -5,6 +5,9 @@
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
 
     &--primary {
         background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));

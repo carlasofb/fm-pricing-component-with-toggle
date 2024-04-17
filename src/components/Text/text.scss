@@ -1,0 +1,11 @@
+.text {
+    font-size: 0.938rem;
+    
+    &--normal {
+        color: hsl(232, 13%, 33%);
+    }
+
+    &--tinted {
+        color: hsl(234, 14%, 74%);
+    }
+}

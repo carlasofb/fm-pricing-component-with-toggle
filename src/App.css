@@ -5,8 +5,17 @@ body {
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+.pricing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/images/bg-top.svg) 50% / cover no-repeat;
 }
