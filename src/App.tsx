@@ -6,7 +6,7 @@ import Toggle from "./components/Toggle/Toggle";
 
 function App() {
   return (
-    <div className="pricing">
+    <div className="app-wrapper">
       <Button>LEARN MORE</Button>
       <br />
       <br />

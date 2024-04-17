@@ -1,0 +1,16 @@
+.pricing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/images/bg-top.svg) top right no-repeat,
+                url(./assets/images/bg-bottom.svg) bottom left no-repeat;
+
+    .toggle-switch__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
