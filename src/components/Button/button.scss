@@ -1,0 +1,31 @@
+.button {
+    min-width: 200px;
+    height: 48px;
+    padding: 0 48px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    &--primary {
+        background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+        &:hover,
+        &:active {
+            background: hsl(240, 78%, 98%);
+            color: hsl(237, 63%, 64%);
+            border: 1px solid hsl(237, 63%, 64%);
+        }
+    }
+
+    &--secondary {
+        background-color: hsl(240, 78%, 98%);
+        color: hsl(237, 63%, 64%);
+
+        &:hover,
+        &:active {
+            background-color: hsl(237, 63%, 64%);
+            color: hsl(240, 78%, 98%);
+            border: 1px solid hsl(240, 78%, 98%);
+        }
+    }
+}
