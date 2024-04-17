@@ -2,6 +2,7 @@ import "./App.css";
 import Button from "./components/Button/Button";
 import Text from "./components/Text/Text";
 import Heading from "./components/Heading/Heading";
+import Toggle from "./components/Toggle/Toggle";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
       <Heading level="h2" style="tinted">
         Our Pricing
       </Heading>
+      <br />
+      <Toggle value={false} />
+      <br />
+      <Toggle value={true} />
     </div>
   );
 }

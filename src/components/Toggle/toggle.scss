@@ -1,0 +1,41 @@
+.toggle {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: 2s, left 0s;
+
+    &__knob {
+        appearance: none;
+        -webkit-appearance: none;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        left: 5px;
+        position: relative;
+        background-color: white;
+        transition: 400ms, left 0s;
+    }
+
+    &--on {
+        opacity: 0.5;
+        justify-content: end;
+
+        .toggle__knob {
+            left: -5px;
+        } 
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+}
