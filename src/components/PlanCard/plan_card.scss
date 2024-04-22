@@ -1,0 +1,47 @@
+.plan-card {
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--white {
+        background-color: white;
+    }
+
+    &--purple {
+        background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        color: hsl(240, 78%, 98%);
+
+        .text {
+            color: hsl(240, 78%, 98%);
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+
+        &:before {
+            content: '$';
+            display: inline;
+            font-size: 30px;
+            margin-right: 5px;
+        }
+    }
+
+    &__features {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+
+        tr {
+            border-top: 1px solid hsl(234, 14%, 74%);
+        }
+
+        tr:last-child { 
+            border-bottom: 1px solid hsl(234, 14%, 74%);
+        }
+    }
+}

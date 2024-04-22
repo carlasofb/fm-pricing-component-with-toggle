@@ -3,6 +3,7 @@ import Button from "./components/Button/Button";
 import Text from "./components/Text/Text";
 import Heading from "./components/Heading/Heading";
 import Toggle from "./components/Toggle/Toggle";
+import PlanCard from "./components/PlanCard/PlanCard";
 
 function Pricing() {
   return (
