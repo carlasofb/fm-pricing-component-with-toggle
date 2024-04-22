@@ -16,7 +16,7 @@ const PlanCard: FC<PlanCardProps> = ({
 }: PlanCardProps) => {
   return (
     <div className={`plan-card plan-card--${style} ${className}`}>
-      <Text {...name} />
+      <Text {...name} className="plan-card__title" />
       <Heading level="h1" style="normal" className="plan-card__price">
         {isMonthly ? price.children.monthly : price.children.annual}
       </Heading>
