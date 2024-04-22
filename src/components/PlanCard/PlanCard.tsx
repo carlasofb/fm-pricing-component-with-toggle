@@ -11,12 +11,15 @@ const PlanCard: FC<PlanCardProps> = ({
   price,
   features,
   button,
+  isMonthly,
   className = "",
 }: PlanCardProps) => {
   return (
     <div className={`plan-card plan-card--${style} ${className}`}>
       <Text {...name} />
-      <Heading {...price} className="plan-card__price" />
+      <Heading level="h1" style="normal" className="plan-card__price">
+        {isMonthly ? price.children.monthly : price.children.annual}
+      </Heading>
       <table className="plan-card__features">
         <tbody>
           {features.map((feature, index) => {

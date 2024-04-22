@@ -8,5 +8,6 @@ export interface PlanCardProps {
     price: HeadingProps;
     features: TextProps[];
     button: ButtonProps;
+    isMonthly: boolean;
     className?: string;
 }

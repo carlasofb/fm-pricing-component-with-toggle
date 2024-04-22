@@ -4,8 +4,11 @@ import Text from "./components/Text/Text";
 import Heading from "./components/Heading/Heading";
 import Toggle from "./components/Toggle/Toggle";
 import PlanCard from "./components/PlanCard/PlanCard";
+import { useState } from "react";
 
 function App() {
+  const [isMonthly, setIsMonthly] = useState(false);
+
   return (
     <div className="app-wrapper">
       <Button style="primary">LEARN MORE</Button>
@@ -30,15 +33,20 @@ function App() {
         Our Pricing
       </Heading>
       <br />
-      <Toggle value={false} />
+      <Toggle value={false} onClick={() => setIsMonthly(!isMonthly)} />
       <br />
-      <Toggle value={true} />
+      <Toggle value={true} onClick={() => setIsMonthly(!isMonthly)} />
       <br />
       <br />
       <PlanCard
         style={"white"}
         name={{ type: "p", style: "normal", children: "Basic" }}
-        price={{ level: "h1", style: "normal", children: "199.99" }}
+        isMonthly={isMonthly}
+        price={{
+          level: "h1",
+          style: "normal",
+          children: { monthly: "19.99", annual: "199.99" },
+        }}
         features={[
           { type: "p", style: "normal", children: "500 GB Storage" },
           { type: "p", style: "normal", children: "2 Users Allowed" },
@@ -50,7 +58,12 @@ function App() {
       <PlanCard
         style={"purple"}
         name={{ type: "p", style: "normal", children: "Professional" }}
-        price={{ level: "h1", style: "normal", children: "249.99" }}
+        isMonthly={isMonthly}
+        price={{
+          level: "h1",
+          style: "normal",
+          children: { monthly: "24.99", annual: "249.99" },
+        }}
         features={[
           { type: "p", style: "normal", children: "1 TB Storage" },
           { type: "p", style: "normal", children: "5 Users Allowed" },
